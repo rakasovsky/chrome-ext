@@ -1,0 +1,31 @@
+{
+    "manifest_version": 2,
+    "name": "Test",
+    "version": "1.0",
+    "description": "test",
+    "content_scripts": [
+        {   
+            "matches": ["*://*/*"], 
+            "js": [ "local.js" ],
+            "run_at": "document_end",
+            "all_frames" : true
+        }
+    ],
+      "commands": {
+        "scroll" : {
+            "suggested_key": {
+                "default": "Ctrl+Shift+2",
+                "mac": "Command+Shift+2"
+            },
+            "description": "Scroll Function"
+        },
+        "scroll2" : {
+            "suggested_key": {
+                "default": "Ctrl+Shift+Space",
+                "mac": "Command+Shift+Space"
+            },
+            "description": "Scroll Function"
+        }    
+    }
+   
+ }
